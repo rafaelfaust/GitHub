@@ -11,7 +11,7 @@ img {
 }
 
 body {
-  background-color:#24292e;
+  background-color:#101216;
   font-family: "Kumbh Sans", sans-serif;  
   text-align: center;    
   padding-bottom: 100px;
@@ -27,7 +27,7 @@ main {
 .devicon-github-original{
   font-size: 60px;
   margin-bottom: 30px;
-  color: #FFFFFF;
+  color: #b100ff;
 }
 
 .section{
@@ -38,7 +38,7 @@ main {
   width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
   max-width: 960px; /* quando chegar em 980px para de aumentar */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  background-color: #252a34;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +58,7 @@ main {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
+  color: #c133ff;
 }
 
 .container header #input-search {
@@ -80,7 +81,7 @@ main {
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
+  background-color: #b100ff;
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -106,19 +107,21 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid #b100ff;
 }
 
 .container .profile-data .info h1{
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 700;
+  color: #c133ff;
 }
 
 .container .profile-data .info p{
   font-size: 15px;  
   font-weight: 400;
   line-height: 23px;
+  color: #c133ff;
 }
 
 /* REPOSITORIES */
@@ -126,6 +129,7 @@ main {
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
+  color: #c133ff;
 }
 
 .container .profile-data .repositories ul{
@@ -141,10 +145,11 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  color: #c133ff;
 }
 
 .container .profile-data .repositories ul li a:hover{
-  background-color:hotpink;
+  background-color:#b100ff;
   color: #fff
 }
 
