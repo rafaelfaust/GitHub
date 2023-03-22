@@ -35,8 +35,8 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%; 
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
   background-color: #252a34;
   display: flex;
@@ -90,7 +90,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;  
+  padding: 20px;  
 }
 
 .container .profile-data .info {
@@ -100,7 +100,7 @@ main {
 }
 
 .container .profile-data .info .data{
-  padding: 40px;
+  padding: 20px;
   width: 50%;
 }
 
@@ -122,6 +122,27 @@ main {
   font-weight: 400;
   line-height: 23px;
   color: #c133ff;
+  margin-bottom: 20px;
+}
+
+.container .profile-data .info .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;  
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.container .profile-data .info .list a{
+  margin: 20px;
+  background-color: #c133ff;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid grey;  
+  display: block;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
 }
 
 /* REPOSITORIES */
@@ -137,6 +158,16 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.container .profile-data .repositories .events li a{
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  color: #c133ff;
+}
+
 
 .container .profile-data .repositories ul li a{
   padding: 20px;
@@ -155,6 +186,20 @@ main {
 
 .container .profile-data.hide{
   display: none;
+}
+
+/* EVENTOS */
+div.events-list-itens h1{
+  margin-bottom: 20px;
+  color: #c133ff;
+}
+div.events-list-itens div.events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;  
+  margin: 10px 0;
 }
 
 @media (max-width: 1280px) {
