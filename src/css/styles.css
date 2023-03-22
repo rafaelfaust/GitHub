@@ -202,6 +202,20 @@ div.events-list-itens div.events {
   margin: 10px 0;
 }
 
+footer {
+  margin-top: 30px;
+  color: #b100ff;
+  opacity: 0.5;
+}
+
+footer:hover {
+  scale: 0.8;
+}
+
+footer:active {
+  opacity: 1;
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
