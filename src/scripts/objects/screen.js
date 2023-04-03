@@ -39,17 +39,21 @@ const screen = {
 
         let eventsList = ""
 
-        user.events.forEach(events => {
-            if (events.type === "PushEvent" || events.type === "CreatedEvent" ) {
-                events.payload.commits.forEach(msg => {
-                    eventsList += `<div class="events">
-                                    <ul>
-                                        <li>${events.repo.name} - ${msg.message}</li>
-                                    </ul>
-                                   </div>`;
-                });
+        user.events.forEach(event => {
+            if(event.payload){
+                if(event.payload.commits){
+                    const commits = event.payload.commits
+                    const commistsList = commits.map( commit => `<span>${commit.message}</span>`)
+
+                    eventsList += 
+                    `<div class="events">
+                        <ul>
+                            <li>${event.repo.name} - ${commistsList}</li>
+                        </ul>
+                    </div>`;
+                }
             }
-        });
+        })
 
         if (user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events-list-itens">
