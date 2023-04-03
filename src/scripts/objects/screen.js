@@ -20,10 +20,10 @@ const screen = {
         user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target="_blank
             ">${repo.name}
                 <ul class="status">
-                    <li>🍴 ${repo.forks}</li>
-                    <li>✨ ${repo.stargazers_count}</li>
-                    <li>👀 ${repo.watchers}</li>
-                    <li>🖥️ ${repo.language}</li>
+                    <li>🍴 ${repo.forks ?? 'Sem'}</li>
+                    <li>✨ ${repo.stargazers_count ?? 'Sem'}</li>
+                    <li>👀 ${repo.watchers ?? 'Sem'}</li>
+                    <li>🖥️ ${repo.language ?? 'Sem'}</li>
                 </ul>
             </a></li>`);
 
@@ -57,7 +57,7 @@ const screen = {
                                                 <ul>
                                                     <li>${eventsList}</li>
                                                 </ul>
-                                         </div>`}
+                                           </div>`}
 
         if (user.events.length === 0) {
             this.userProfile.innerHTML += `<div class="activities">
@@ -65,7 +65,7 @@ const screen = {
                                               <ul>
                                                   <li>O usuário não possui novos eventos</li>
                                               </ul>
-                                         </div>`
+                                           </div>`
         }
     },
     renderNotFound() {
