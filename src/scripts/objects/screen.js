@@ -19,34 +19,34 @@ const screen = {
 
         user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target="_blank
             ">${repo.name}
-            <ul class="status">
-            <li>🍴 ${repo.forks}</li>
-            <li>✨ ${repo.stargazers_count}</li>
-            <li>👀 ${repo.watchers}</li>
-            <li>🖥️ ${repo.language}</li>
-            </ul>
+                <ul class="status">
+                    <li>🍴 ${repo.forks}</li>
+                    <li>✨ ${repo.stargazers_count}</li>
+                    <li>👀 ${repo.watchers}</li>
+                    <li>🖥️ ${repo.language}</li>
+                </ul>
             </a></li>`);
 
 
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `<div class="repositories section">
-                                            <h2>Repositórios</h2>
-                                            <ul>
-                                                ${repositoriesItens}
-                                            </ul>
+                                                <h2>Repositórios</h2>
+                                                <ul>
+                                                    ${repositoriesItens}
+                                                </ul>
                                            </div>`
         }
 
         let eventsList = ""
 
         user.events.forEach(events => {
-            if (events.type === "PushEvent" || events.type === "CreatedEvent") {
+            if (events.type === "PushEvent" || events.type === "CreateEvent") {
                 events.payload.commits.forEach((msg) => {
                     eventsList += `<div class="events">
-                              <ul>
-                                <li>${events.repo.name} - ${msg.message}</li>
-                              </ul>
-                            </div>`;
+                                    <ul>
+                                        <li>${events.repo.name} - ${msg.message}</li>
+                                    </ul>
+                                   </div>`;
                 });
             }
         });
