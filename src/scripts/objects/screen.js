@@ -40,8 +40,8 @@ const screen = {
         let eventsList = ""
 
         user.events.forEach(events => {
-            if (events.type === "PushEvent" || events.type === "CreateEvent") {
-                events.payload.commits.forEach((msg) => {
+            if (events.type === "PushEvent" || events.type === "CreatedEvent" ) {
+                events.payload.commits.forEach(msg => {
                     eventsList += `<div class="events">
                                     <ul>
                                         <li>${events.repo.name} - ${msg.message}</li>
