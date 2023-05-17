@@ -7,6 +7,10 @@ Este é um projeto que utiliza HTML, CSS e JavaScript para criar uma aplicação
 - Exibir informações do usuário do GitHub, como nome, nome de usuário, número de seguidores e número de repositórios.
 - Listar os repositórios do usuário, mostrando o nome e a descrição de cada um.
 
+## Acesso ao projeto
+
+O projeto está disponível online e pode ser acessado através do seguinte link: [GitHub Search](https://git-hub-search.netlify.app/)
+
 ## Pré-requisitos
 
 Antes de começar, verifique se você possui os seguintes requisitos:
@@ -68,6 +72,6 @@ Este projeto foi desenvolvido por [Rafael Faust](https://github.com/rafaelfaust)
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
 
-## Agradecimento
+## Agradecimentos
 
 - [GitHub](https://github.com) por disponibilizar a API e possibilitar a criação deste projeto.
